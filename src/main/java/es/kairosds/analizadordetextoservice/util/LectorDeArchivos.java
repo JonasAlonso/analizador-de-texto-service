@@ -15,7 +15,6 @@ public class LectorDeArchivos {
 
 		try (BufferedReader br = Files.newBufferedReader(Paths.get("listanegra.txt"))) {
 
-			// read line by line
 			String line;
 			while ((line = br.readLine()) != null) {
 				sb.append(line).append("\n");
