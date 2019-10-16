@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import es.kairosds.analizadordetextoservice.model.RespuestaAnalisis;
 import es.kairosds.analizadordetextoservice.model.Texto;
-import es.kairosds.analizadordetextoservice.service.AnalizadorService;
+import es.kairosds.analizadordetextoservice.service.impl.AnalizadorServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
@@ -20,7 +20,7 @@ import lombok.extern.slf4j.Slf4j;
 public class AnalizadorDeTextoController {
 
 	@Autowired
-	AnalizadorService analizadorService;
+	AnalizadorServiceImpl analizadorService;
 
 	@PostMapping("/")
 	@ResponseStatus(HttpStatus.OK)

@@ -1,4 +1,4 @@
-package es.kairosds.analizadordetextoservice.service;
+package es.kairosds.analizadordetextoservice.service.impl;
 
 import java.util.Collections;
 import java.util.List;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import es.kairosds.analizadordetextoservice.util.LectorDeArchivos;
 
 @Service
-public class AnalizadorService {
+public class AnalizadorServiceImpl {
 	
 	public List<String> analizarTexto(String texto){
 		
